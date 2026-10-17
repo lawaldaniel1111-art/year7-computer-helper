@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <title>Cyber — Year 7 Computer Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="Cyber home">
+        <span class="brand-bot">✦</span>
+        <span><strong>CYBER</strong><small>YEAR 7 COMPUTER HELPER</small></span>
+      </a>
+      <div class="side-label">WORKSPACE</div>
+      <nav class="nav-list" aria-label="Main navigation">
+        <button class="nav-item active" data-page="dashboard"><span>▦</span> Dashboard</button>
+        <button class="nav-item" data-page="lessons"><span>▤</span> Computer lessons</button>
+        <button class="nav-item" data-page="parts"><span>◈</span> Computer parts</button>
+        <button class="nav-item" data-page="troubleshoot"><span>⚙</span> Troubleshooting</button>
+        <button class="nav-item" data-page="quiz"><span>◎</span> Quiz arena</button>
+        <button class="nav-item" data-page="typing"><span>⌨</span> Typing zone</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="mini-bot"><div class="bot-face"><i></i><i></i></div><div><strong>Cyber assistant</strong><small>Ready to help you learn</small></div></div>
+        <button class="nav-item" id="themeToggle"><span>◐</span> Switch theme</button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb">Workspace <span>/</span> <strong id="pageCrumb">Dashboard</strong></div>
+        <div class="top-actions"><span class="status-dot"></span><span class="online-label">Learning mode</span><div class="avatar">Y7</div></div>
+      </header>
+
+      <div class="content" id="pageContent">
+        <section class="welcome-banner">
+          <div class="welcome-copy">
+            <div class="eyebrow"><span class="spark">✦</span> YOUR DIGITAL LEARNING HUB</div>
+            <h1>Hey, learner!<br><span>Ready to level up?</span></h1>
+            <p>Explore computers, solve problems, and build your tech skills — one mission at a time.</p>
+            <button class="primary-button" data-go="lessons">Start learning <span>→</span></button>
+          </div>
+          <div class="hero-bot" aria-label="Cyber robot illustration">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="robot">
+              <div class="antenna"></div><div class="robot-ear left"></div><div class="robot-ear right"></div>
+              <div class="robot-head"><div class="robot-eyes"><i></i><i></i></div><div class="robot-mouth"></div></div>
+              <div class="robot-body"><div class="chest-light">C</div><div class="body-line"></div></div>
+            </div>
+            <div class="float-chip chip-one">0101</div><div class="float-chip chip-two">AI × Y7</div>
+          </div>
+          <div class="banner-grid"></div>
+        </section>
+
+        <section class="section-block">
+          <div class="section-heading"><div><div class="eyebrow">YOUR WORKSPACE</div><h2>Learning dashboard</h2></div><span class="subtle">Your progress is saved on this device</span></div>
+          <div class="stats-grid">
+            <article class="stat-card"><div class="stat-icon blue">✦</div><div><span>XP earned</span><strong id="xpStat">0 XP</strong><small>Keep learning to earn more</small></div></article>
+            <article class="stat-card"><div class="stat-icon purple">▤</div><div><span>Lessons explored</span><strong id="lessonStat">0 / 10</strong><small>Knowledge unlocked</small></div></article>
+            <article class="stat-card"><div class="stat-icon green">◎</div><div><span>Best quiz score</span><strong id="bestStat">0%</strong><small>Can you beat your record?</small></div></article>
+          </div>
+        </section>
+
+        <section class="section-block">
+          <div class="section-heading"><div><div class="eyebrow">PICK YOUR NEXT MISSION</div><h2>Explore Cyber</h2></div></div>
+          <div class="feature-grid">
+            <button class="feature-card" data-go="lessons"><div class="feature-icon blue">▤</div><h3>Computer lessons</h3><p>Learn key Year 7 topics with short explanations and activities.</p><span class="card-link">Explore lessons ↗</span></button>
+            <button class="feature-card" data-go="parts"><div class="feature-icon purple">◈</div><h3>Computer parts</h3><p>Discover what each computer component does.</p><span class="card-link">Open computer lab ↗</span></button>
+            <button class="feature-card" data-go="troubleshoot"><div class="feature-icon orange">⚙</div><h3>Fix my computer</h3><p>Practise safe checks for common computer problems.</p><span class="card-link">Solve a problem ↗</span></button>
+            <button class="feature-card" data-go="quiz"><div class="feature-icon green">◎</div><h3>Quiz arena</h3><p>Test what you know and earn experience points.</p><span class="card-link">Take a quiz ↗</span></button>
+            <button class="feature-card" data-go="typing"><div class="feature-icon cyan">⌨</div><h3>Typing zone</h3><p>Practise accuracy and see your typing speed.</p><span class="card-link">Start typing ↗</span></button>
+            <button class="feature-card" data-go="assistant"><div class="feature-icon pink">✧</div><h3>Ask Cyber</h3><p>Get help with topics covered in this learning app.</p><span class="card-link">Chat with Cyber ↗</span></button>
+          </div>
+        </section>
+        <footer>CYBER <span>•</span> Learn smart. Stay curious. Stay safe.</footer>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
